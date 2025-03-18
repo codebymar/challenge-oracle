@@ -13,14 +13,14 @@ function adicionarAmigo() {
 
     listaDeAmigos.push(nomeAmigo);
     atualizarListaDeAmigos();
-    inputAmigo.value = ''; // Limpa o campo de entrada
-    inputAmigo.focus(); // Foca novamente no campo de entrada
+    inputAmigo.value = ''; 
+    inputAmigo.focus(); 
 }
 
 // Função para atualizar a lista exibida na página
 function atualizarListaDeAmigos() {
     const listaAmigos = document.getElementById('listaAmigos');
-    listaAmigos.innerHTML = ''; // Limpa a lista antes de atualizá-la
+    listaAmigos.innerHTML = ''; 
 
     listaDeAmigos.forEach((amigo, index) => {
         const item = document.createElement('li');
@@ -46,7 +46,7 @@ function sortearAmigo() {
 // Função para exibir o resultado do sorteio
 function exibirResultado(amigoSorteado) {
     const resultado = document.getElementById('resultado');
-    resultado.innerHTML = ''; // Limpa o resultado anterior
+    resultado.innerHTML = ''; 
 
     const itemResultado = document.createElement('li');
     itemResultado.textContent = `O amigo secreto sorteado é: ${amigoSorteado}`;
